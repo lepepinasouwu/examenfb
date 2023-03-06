@@ -5,33 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css"
+      type="text/css"
+    />
     <title>Examen Programación 2</title>
   </head>
   <body>
-    <header>
+    <header id="navbar">
       <nav id="observer"></nav>
-      <h1>Sigo siendo un título</h1>
+      <h1>Jueguito UAL</h1>
     </header>
+    <div id="principal">
+      <section id="reglog">
+        <label>Correo:</label>
+        <input type="text" id="mail" />
+        <br />
+        <label>Contraseña:</label>
+        <input type="password" id="pass" />
+      </section>
 
-    <section id="reglog">
-      <label>Correo:</label>
-      <input type="text" id="mail" />
+      <section id="botonesreg">
+        <button id="reg">Crear cuenta</button>
+        <button id="log">Iniciar sesión</button>
+      </section>
+
+      <section id="botonesaut">
+        <button id="googlebut">Inicia con Google.</button>
+        <button id="facebut">Inicia con Facebook.</button>
+        <button id="gitbut">Inicia con GitHub.</button>
+      </section>
+    </div>
+
+    <div class="hide" id="crud">
+      <h1>C.R.U.D</h1>
+      <section id="agregar">
+        <input type="text" placeholder="Nombre" id="nombre" />
+        <input type="text" placeholder="Usuario" id="usuario" />
+        <input type="text" placeholder="País" id="pais" />
+        <button id="add">Agregar</button>
+      </section>
+      <section id="opciones">
+        <input type="text" placeholder="Nombre" id="nombre2" />
+        <input type="text" placeholder="Usuario" id="usuario2" />
+        <input type="text" placeholder="País" id="pais2" />
+        <input type="number" placeholder="Puntuación" id="puntuacion" />
+      </section>
+      <section id="buttonsopc">
+        <button id="leer">Leer</button>
+        <button id="actualizar">Actualizar</button>
+        <button id="borrar">Borrar</button>
+        <button id="mostrar">Mostrar</button>
+      </section>
       <br />
-      <label>Contraseña:</label>
-      <input type="password" id="pass" />
-    </section>
+      <section>
+        <form action="https://juegofinal.onrender.com">
+          <input id="jugar" type="submit" value="Jugar" />
+        </form>
+      </section>
+      <br />
+      <section id="datosfb">
+        <table id="tabla">
+          Registros:
+        </table>
+      </section>
 
-    <section id="botonesreg">
-      <button id="reg">Crear cuenta</button>
-      <button id="log">Iniciar sesión</button>
-      <button id="close">Cerrar sesión</button>
-    </section>
+      <section id="cerrarsesion">
+        <button id="close">Cerrar sesión</button>
+      </section>
 
-    <section id="botonesaut">
-      <button id="googlebut">Inicia con Google.</button>
-      <button id="facebut">Inicia con Facebook.</button>
-      <button id="gitbut">Inicia con GitHub.</button>
-    </section>
+      <div class="" id="mapcont">
+        <div class="" id="map"></div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/three@0.126.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="./js/javaScript.js" type="module"></script>
   </body>
-  <script src="./js/javaScript.js" type="module"></script>
 </html>

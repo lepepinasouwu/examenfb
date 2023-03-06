@@ -51,6 +51,15 @@ body {
     border: none;
     background-color: #f1e8f2;
   }
+
+  input[type="number"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1e8f2;
+  }
   
   /* Estilos para los botones */
   button {
@@ -92,6 +101,36 @@ body {
   #gitbut {
     background-color: #211f1f;
   }
+
+  #leer {
+    background-color: #211f1f;
+  }
+
+  #actualizar {
+    background-color: #211f1f;
+  }
+
+  #borrar {
+    background-color: #211f1f;
+  }
+
+  #mostrar {
+    background-color: #211f1f;
+  }
+
+  #jugar {
+    background-color: #211f1f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
   
   /* Estilos para la sección de botones */
   #botonesreg,
@@ -100,4 +139,32 @@ body {
     justify-content: center;
     margin-top: 20px;
   }
+  
+  .hide{
+    display: none;
+  }
+  
+
+  /*Estilos del CRUD*/
+  #add {
+    background-color: #aa47a8;
+  }
+
+  /*Mapita*/
+  /* MapBox */
+#map { 
+  position: absolute;
+  margin-left: 16rem;
+  top: 1px;  
+  width: 1000px;
+  height: 400px;
+  }
+  
+  #mapcont {
+      position: relative;
+      right: 15rem;
+      margin-top: 1cm;
+    }
+  
+  
   
