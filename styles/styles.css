@@ -1,0 +1,103 @@
+/* Estilos para el fondo y los colores de texto */
+body {
+    background-color: #dfb3dcde;
+    color: #5c555a;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    background-color: #f7d7ff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20rem;
+  }
+  
+  nav {
+    font-size: 18px;
+    color: black;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Estilos para la sección de registro e inicio de sesión */
+  #reglog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1e8f2;
+  }
+
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1e8f2;
+  }
+  
+  /* Estilos para los botones */
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+  }
+  
+  #reg {
+    background-color: #a74aa8;
+  }
+  
+  #log {
+    background-color: #6c2a6a;
+  }
+
+  #close {
+    background-color: #491c48;
+  }
+  
+  #googlebut {
+    background-color: #ea4335;
+  }
+  
+  #facebut {
+    background-color: #3b5998;
+  }
+  
+  #gitbut {
+    background-color: #211f1f;
+  }
+  
+  /* Estilos para la sección de botones */
+  #botonesreg,
+  #botonesaut {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
